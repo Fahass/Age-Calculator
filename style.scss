@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,50,.8),rgba(0,0,60,.9)), url(./back30.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-family: arial;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #fff;
+        line-height: 2;
+    }
+    P{
+        margin-top: 1rem;
+        color: #fff;
+    }
+}
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    border: none;
+    box-shadow: 8.5px 9px 17px 0px black;
+    border-radius: .5rem;
+    padding: 2rem;
+    height: 450px;
+    width: 300px;
+    gap: 30px;
+    margin-bottom: .5rem;
+    @media (max-width: 325px){
+        height: auto;
+        width: fit-content;
+    }
+    .date-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        input{
+            font-size: 1.2rem;
+            font-family: verdana;
+            color: #fff;
+            width: auto;
+            height: 40px;
+            padding: .7rem;
+            border-radius: .5rem;
+            background-color: transparent;
+        }
+        button{
+            font-size: 1.2rem;
+            width: auto;
+            height: 40px;
+            padding: 0 1rem;
+            border-radius: .6rem;
+            background-color: #bdbdbd;
+            transition: .4s;
+            &:hover{
+                background-color: #a0a0a0; 
+            }
+        }
+    }
+    .age-box{
+        display: flex;
+        place-content: center;
+        place-items: center;
+        padding: .5rem;
+        text-align: center;
+        width: 105%;
+        margin-top: 2rem;
+        p{
+            background-color: transparent;
+            color: #fff;
+            font-family: verdana;
+            border-bottom: .4px solid #808080;
+            font-size: 1.2rem;
+            width: auto;
+            height: auto;
+            border-radius: .5rem;
+            padding: .3rem 1rem;
+        }
+    }
+}
